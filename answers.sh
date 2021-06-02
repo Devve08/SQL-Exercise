@@ -23,12 +23,12 @@ VALUES (7, "Mhamad", 29, "M", 500);
 
 
 6) UPDATE students
-SET Points = 300 + 200
+SET Points = points + 200
 WHERE name = "Basma";
 
 
 7) UPDATE students
-SET Points = 200 - 50
+SET Points = points - 50
 WHERE name = "Alex";
 
 ##Creating Tables
