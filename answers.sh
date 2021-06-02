@@ -81,8 +81,30 @@ FROM employees
 WHERE Role = "Graphic Designer"
 
 
-##
+## Count and Filter
+
+1)  SELECT name, points
+FROM students
+GROUP by name
+HAVING points = (select max(points) from students);
+
+
+2)  SELECT avg(points) 
+FROM students;
+
+
+3)  SELECT points, COUNT (*) AS Number_of_students
+FROM students
+WHERE points = 500
+GROUP BY points;
+
+
+4)  SELECT name
+FROM students
+WHERE name like '%s%';
 
 
 
-
+5)  SELECT name, points
+FROM students
+ORDER BY points DESC;
