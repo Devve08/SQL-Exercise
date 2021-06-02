@@ -63,6 +63,24 @@ WHERE
 id = 4;
 
 
+## Joins
+
+1) SELECT employees.Name, companies.name, companies.Date
+FROM employees
+INNER JOIN companies on companies.name = employees.Company;
+
+
+2)  SELECT employees.Name, companies.name, companies.Date 
+FROM employees
+LEFT JOIN companies on companies.name = employees.Company
+WHERE companies.Date < 2000;
+
+
+3)   SELECT Company
+FROM employees
+WHERE Role = "Graphic Designer"
+
+
 ##
 
 
